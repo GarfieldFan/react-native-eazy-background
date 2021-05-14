@@ -2,7 +2,7 @@
 
 Base utility for mobile phone applicaion for android and ios
 
-![](demo.gif)
+![](https://github.com/GarfieldFan/react-native-eazy-background/blob/main/demo.gif?raw=true)
 
 
 
