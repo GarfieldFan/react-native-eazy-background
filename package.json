@@ -1,6 +1,6 @@
 {
   "name": "react-native-eazy-background",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "build in function for toast message, loading modal, safeareaview and statusbar control",
   "main": "index.js",
   "scripts": {
