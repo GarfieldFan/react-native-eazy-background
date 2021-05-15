@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, FlatList } from 'react-native'
+import { View, FlatList, SafeAreaView, Platform } from 'react-native'
 import { ToastContext } from './Context';
 import ToastItem from './ToastItem';
 import css from './Style';
@@ -11,7 +11,12 @@ function Component(props) {
 
     return <>
         <View style={[css.message_container]} pointerEvents={'none'}>
-            <FlatList data={Context.messages} renderItem={renderItem} keyExtractor={item => item.id} />
+            {Platform.OS === 'ios' && <SafeAreaView style={css.safe_top} />}
+            <FlatList 
+            data={Context.messages} 
+            renderItem={renderItem} 
+            keyExtractor={item => item.id}
+            style={[css.toast_list_container]} />
         </View>
     </>
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Animated, Easing } from 'react-native';
+import { Animated, Easing, StatusBar, Platform, NativeModules } from 'react-native';
 import { ToastContext, LoadingContext } from './Context';
 
 export function useToast() {

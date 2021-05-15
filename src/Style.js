@@ -1,10 +1,16 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Platform, StatusBar } from 'react-native';
 
+const _spaceing = 10;
+const _status_bar_hight = Platform.select({
+    ios: 0 + _spaceing,
+    android: StatusBar.currentHeight + _spaceing,
+    default: 0,})
 const _toast_color = { SUCCESS: '#76EFAA', ERROR: '#FE837A', INFO: '#17CFC3', WARNING: '#FEEFAB' }
 
 export default StyleSheet.create({
     container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-    message_container: { position: 'absolute', left: 0, right: 0, top: 30, },
+    message_container: { position: 'absolute', left: 0, right: 0, top: 0, alignItems: 'center'},
+    toast_list_container: { marginTop: _status_bar_hight, maxWidth: 800, width: '100%'},
     loading_container: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#00000050' },
     safe_top: { flex: 0 },
     safe_bottom: { flex: 1 },
