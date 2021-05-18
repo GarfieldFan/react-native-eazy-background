@@ -132,6 +132,9 @@ class HomeScreen extends React.Component {
 | left              | int: 0               | number                                                                                 |
 | right             | int: 0               | number                                                                                 |
 | flex              | int: 0               | number                                                                                 |
+| flex_basis        | int: 0               | number                                                                                 |
+| flex_grow         | int: 0               | number                                                                                 |
+| flex_shrink       | int: 0               | number                                                                                 |
 | direction         | string: 'row'        | 'column', 'row', 'column-reverse', 'row-reverse'                                       |
 | justify_content   | string: 'center'     | 'flex-start', 'flex-end', 'center', 'space-between', 'space-around', 'space-evenly'    |
 | align_items       | string: 'center'     | 'stretch', 'flex-start', 'flex-end', 'center', 'baseline'                              |
